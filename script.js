@@ -6,11 +6,11 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const HOST = 'localhost:8080';
+const HOST = '*host*';
 
-axios.post('http://' + HOST + '/authentication/login', {
-    identification: 'Nexyy',
-    password: 'Trackshittaz'
+axios.post('http://' + HOST + '*path*', {
+    identification: '*username*',
+    password: '*password*'
 }, {
     headers: {
         'content-type': 'application/json'
